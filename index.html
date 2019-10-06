@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+
+    <title>Explore Berlin Tours</title>
+</head>
+
+<body>
+
+    <!--   Navbar   
+    <div class="container-fluid navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-expand-sm fixed-top">
+
+            <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#about">About</span></a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>
+
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+-->
+    <!--   Map Container   -->
+
+    <div class="container-fluid" id="map-container">
+        <div id="map"></div>
+    </div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: {
+                    lat: 52.5032721,
+                    lng: 13.4194204
+                }
+            });
+            var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+
+        var locations = [{
+            lat: 52.4950568,
+            lng: 13.4230609
+        }, {
+
+            lat: 52.496312,
+            lng: 13.422184
+        }, {
+
+            lat: 52.497876,
+            lng: 13.437491
+        }, ];
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNslwlFKyLHFOe7YdneDKh6eLaYhWEPs0&callback=initMap">
+    </script>
+
+</body>
+
+</html>

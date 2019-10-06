@@ -1,0 +1,15 @@
+h1 {
+    background-color: blueviolet;
+}
+
+#map-container {
+    height: 400px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#map {
+    height: 350px;
+    width: 550px;
+    text-align: center;
+}
