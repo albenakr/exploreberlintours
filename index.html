@@ -10,55 +10,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+
 </head>
 
 <body>
 
     <!--   Navbar   -->
-    <div class="container-fluid navbar-container"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">Explore Berlin Tours</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Explore Berlin Tours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
-                <li class="nav-item active ">
-                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
 
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Tours
               </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Sightseeing</a>
-                        <a class="dropdown-item" href="#">Bar Crawl</a>
-                        <a class="dropdown-item" href="#">Best Cafes</a>
-                        <a class="dropdown-item" href="#">Street Art</a>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Sightseeing</a>
+                            <a class="dropdown-item" href="#">Bar Crawl</a>
+                            <a class="dropdown-item" href="#">Best Cafes</a>
+                            <a class="dropdown-item" href="#">Street Art</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div>
-    </nav>
-
-    <!--   Map Container   -->
-
-    <div class="container-fluid" id="map-container">
-        <div id="map"></div>
+            </div>
+        </nav>
     </div>
 
+    <!--   Cover Photo   -->
+    <div class="container-fluid " id="cover-photo">
+    </div>
 
-    <script>
-        var __message = "Hello from index.html";
-    </script>
+    <!--   Tour Options   -->
+
+    <div class="container-fluid tour-options">
+
+
+        <div class="tour-options-item">
+            <h2>Sightseeing Tour</h2>
+            <p>Bike through some of Berlin's most memorable spots.</p>
+            <button type="button">Details</button>
+        </div>
+        <div class="tour-options-item">
+            <h2>Bar Crawl</h2>
+            <p>Visit some of Berlin's hidden and hipster bars.</p>
+            <button type="button">Details</button>
+        </div>
+        <div class="tour-options-item">
+            <h2>Best Cafes Tour</h2>
+            <p>Try some of Berlin's best coffee and cakes.</p>
+            <button type="button">Details</button>
+        </div>
+        <div class="tour-options-item">
+            <h2>Street Art Tour</h2>
+            <p>Explore the city through its street art.</p>
+            <button type="button">Details</button>
+        </div>
+
+
+    </div>
 
 
     <!-- Optional JavaScript -->

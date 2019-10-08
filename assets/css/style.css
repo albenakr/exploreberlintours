@@ -1,5 +1,31 @@
-h1 {
-    background-color: blueviolet;
+#cover-photo {
+    background: url('../images/claudio-schwarz.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.tour-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.tour-options-item {
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #map-container {
