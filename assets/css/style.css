@@ -1,3 +1,14 @@
+.section-title {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Index Page */
+
+
+/* Cover photo - Index Page */
+
 #cover-photo {
     background: url('../images/claudio-schwarz.jpg');
     background-position: center;
@@ -9,6 +20,9 @@
     height: 300px;
     margin-top: 50px;
 }
+
+
+/* Tour Options - Index Page */
 
 .tour-options {
     display: flex;
@@ -28,14 +42,48 @@
     flex-shrink: 1;
 }
 
-#map-container {
-    height: 400px;
-    width: 100%;
-    background-color: aquamarine;
+.tour-title {
+    padding-top: 50px;
 }
+
+
+/* Individual Tour Pages */
+
+
+/* Map */
 
 #map {
     height: 350px;
     width: 550px;
     text-align: center;
+}
+
+
+/* Guide */
+
+.guide-image {
+    width: 198px;
+    height: 198px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.guide-overview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.guide-overview div {
+    margin: 3px;
+}
+
+
+/* Footer */
+
+footer {
+    height: 150px;
+    background-color: antiquewhite;
 }

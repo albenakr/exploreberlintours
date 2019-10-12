@@ -2,35 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Explore Berlin Tours - Bars Tour
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 
-    <title>Explore Berlin - Bar Tour</title>
 </head>
 
 <body>
 
-    <div class="container-fluid" id="map-container">
-        <div id="map"></div>
+    <!--   Navbar   -->
+
+    <div class="container-fluid navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Explore Berlin Tours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tours
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Sightseeing</a>
+                            <a class="dropdown-item" href="#">Bar Crawl</a>
+                            <a class="dropdown-item" href="#">Best Cafes</a>
+                            <a class="dropdown-item" href="#">Street Art</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
     </div>
 
-    <script>
-        var __message = "Hello from barstour.html";
-    </script>
-    <script src="assets/js/main.js"></script>
+    <!--   Tour   -->
+    <div class="container-fluid tour-title">
+        <h1>Bar Crawl Tour</h1>
+    </div>
 
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNslwlFKyLHFOe7YdneDKh6eLaYhWEPs0&callback=initMap">
-    </script>
+    <!--   Tour Map   -->
+    <<div class="container-fluid tour-title">
+        <h1>Tour Map</h1>
+        </div>
+        <div id="map"></div>
 
+        <!--   Tour Guide   -->
+        <div class="container-fluid section-title">
+            <h2>Your Guide</h2>
+        </div>
+
+        <div class="container-fluid guide-overview">
+            <div class="row">
+                <div class="guide-image">
+                    <img src="assets/images/dessi.jpg" alt="Your Tour Guide Dessi">
+                </div>
+                <div>
+                    <p>Your guide on this tour is Dessi. <br> She is a Berlin native with many years of exploring the local bar scene.</p>
+                </div>
+                <div>
+                    <button>Book tour with Dessi</button>
+                </div>
+            </div>
+        </div>
+
+        <!--   Tour Overview   -->
+
+        <!--   Footer   -->
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNslwlFKyLHFOe7YdneDKh6eLaYhWEPs0&callback=initMap">
+        </script>
 
 </body>
 
