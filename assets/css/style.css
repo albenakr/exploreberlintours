@@ -80,10 +80,29 @@
     margin: 3px;
 }
 
+.modal-container {
+    justify-content: center;
+}
+
+
+/* Tour Overview 
+
+.tour-overview {
+    display: flex;
+    flex-direction: row;
+}
+
+*/
+
 
 /* Footer */
 
 footer {
-    height: 150px;
+    height: 50px;
+    width: 100%;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
