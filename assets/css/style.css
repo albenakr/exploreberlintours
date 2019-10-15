@@ -1,96 +1,79 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.section-title {
-    display: flex;
-    flex-direction: row;
-}
-
-
-/* Index Page */
-
-
-/* Cover photo - Index Page */
-
-#cover-photo {
-    background: url('../images/claudio-schwarz.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    height: 300px;
-    margin-top: 50px;
-}
-
-
-/* Tour Options - Index Page */
-
-.tour-options {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.tour-options-item {
-    height: 200px;
-    width: 300px;
-    background-color: aqua;
-    margin: 10px;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.tour-title {
-    padding-top: 50px;
-}
-
-
-/* Individual Tour Pages */
-
-
-/* Map */
-
-#map {
-    height: 350px;
-    width: 550px;
-    text-align: center;
-}
-
-
-/* Guide */
-
-.guide-image {
-    width: 198px;
-    height: 198px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.guide-overview {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.guide-overview div {
-    margin: 3px;
-}
-
-.modal-container {
-    justify-content: center;
-}
-
-
-/* Tour Overview 
+                                body {
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            .section-title {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            /* Index Page */
+                            /* Cover photo - Index Page */
+                            
+                            #cover-photo {
+                                background: url('../images/claudio-schwarz.jpg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: 100% 100%;
+                                -webkit-background-size: 100% 100%;
+                                -moz-background-size: 100% 100%;
+                                -o-background-size: 100% 100%;
+                                height: 300px;
+                                margin-top: 50px;
+                            }
+                            /* Tour Options - Index Page */
+                            
+                            .tour-options {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+                                align-content: center;
+                            }
+                            
+                            .tour-options-item {
+                                height: 200px;
+                                width: 300px;
+                                background-color: aqua;
+                                margin: 10px;
+                                flex-grow: 1;
+                                flex-shrink: 1;
+                            }
+                            
+                            .tour-title {
+                                padding-top: 50px;
+                            }
+                            /* Individual Tour Pages */
+                            /* Map */
+                            
+                            .map-container {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                            }
+                            
+                            #map {
+                                height: 350px;
+                                width: 550px;
+                            }
+                            /* Guide */
+                            
+                            .guide-image {
+                                width: 198px;
+                                height: 198px;
+                                overflow: hidden;
+                                border-radius: 50%;
+                            }
+                            
+                            .guide-overview div {
+                                margin: 3px;
+                            }
+                            
+                            .modal-container {
+                                justify-content: center;
+                            }
+                            /* Tour Overview 
 
 .tour-overview {
     display: flex;
@@ -98,24 +81,22 @@ body {
 }
 
 */
-
-
-/* Footer */
-
-footer {
-    height: 50px;
-    width: 100%;
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.carousel {
-    margin: 15px;
-}
-
-.carousel-item {
-    background-color: blanchedalmond;
-}
+                            /* Footer */
+                            
+                            footer {
+                                height: 50px;
+                                width: 100%;
+                                background-color: antiquewhite;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-content: center;
+                                bottom: 0px;
+                            }
+                            
+                            .carousel {
+                                margin: 15px;
+                            }
+                            
+                            .carousel-item {
+                                background-color: blanchedalmond;
