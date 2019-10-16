@@ -1,36 +1,52 @@
 function initMap() {
-    console.log(__message);
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+    console.log(__message)
+        //Map
+    map = new google.maps.Map(document.getElementById('map'), {
         center: {
-            lat: 52.5032721,
-            lng: 13.4194204
-        }
+            lat: 52.502472,
+            lng: 13.4389944
+        },
+        zoom: 13
     });
-    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-    var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
+
+
+    // Loop through markers
+    for (var i = 0; i < markers.length; i++) {
+        addMarker(markers[i]);
+
+    }
+
+    //Add Marker Function
+    function addMarker(props) {
+        var marker = new google.maps.Marker({
+            position: props.coordinates,
+            map: map,
+
         });
+
+        //Check for content
+        if (props.content) {
+            var infoWindow = new google.maps.InfoWindow({
+                content: props.content
+            });
+
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+        }
+    }
+
+
+
+    var TourPath = new google.maps.Polyline({
+        path: TourPlanCoordinates,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
     });
 
-    var markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
+    TourPath.setMap(map);
+
 }
-
-var locations = [{
-    lat: 52.4950568,
-    lng: 13.4230609
-}, {
-
-    lat: 52.496312,
-    lng: 13.422184
-}, {
-
-    lat: 52.497876,
-    lng: 13.437491
-}, ];

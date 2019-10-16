@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Cafe Tour - Explore Berlin Tours
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <!--   Navbar   -->
+
+    <div class="container-fluid navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Explore Berlin Tours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">About <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tours
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                            <a class="dropdown-item" href="sightseeingtour.html">Sightseeing</a>
+                            <a class="dropdown-item" href="barstour.html">Bar Crawl</a>
+                            <a class="dropdown-item" href="cafetour.html">Best Cafes</a>
+                            <a class="dropdown-item" href="streetarttour.html">Street Art</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <!--   Tour   -->
+    <div class="container-fluid tour-title">
+        <div class="row">
+            <h1>Best Cafes Tour</h1>
+        </div>
+    </div>
+
+    <!--   Tour Map   -->
+
+    <div class="container-fluid map-container">
+        <div class="row">
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <script>
+        var __message = "Hello from cafetour";
+
+        var markers = [{
+                coordinates: {
+                    lat: 52.4950568,
+                    lng: 13.4230609
+                },
+                content: `<h4>Brammibal's Donuts<h4>`
+            }, {
+
+                coordinates: {
+                    lat: 52.496312,
+                    lng: 13.422184
+                },
+                content: '<h4>Concierge Coffee<h4>'
+
+            },
+
+            {
+                coordinates: {
+                    lat: 52.497876,
+                    lng: 13.437491
+                },
+                content: '<h4>Cafe Mugrabi<h4>'
+            },
+
+            {
+                coordinates: {
+                    lat: 52.499573,
+                    lng: 13.439483
+                },
+                content: '<h4>Pastel<h4>'
+            },
+
+
+        ];
+
+        var TourPlanCoordinates = [{
+            lat: 52.4950568,
+            lng: 13.4230609
+        }, {
+            lat: 52.496312,
+            lng: 13.422184
+        }, {
+            lat: 52.497876,
+            lng: 13.437491
+        }, {
+            lat: 52.499573,
+            lng: 13.439483
+        }];
+    </script>
+
+
+    <!--   Tour Guide   -->
+    <div class="container-fluid section-title">
+        <div class="row">
+            <h2>Your Guide</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid guide-overview">
+        <div class="row">
+
+            <div class="col-12 col-md-3">
+                <div class="guide-image">
+                    <img src="assets/images/tevy.jpg" alt="Your Tour Guide Dessi">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <p>Your guide on this tour is Tevy. <br> She is a coffee aficionado and will show you all the hidden gems.</p>
+            </div>
+
+            <div class="col-12 col-md-2">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Tour with Tevy</button>
+            </div>
+
+        </div>
+
+
+
+
+        <!--   Book Tour Modal   -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="bookBarsTour" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookBarsTour">Book Tour</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="firstNameInput" class="text-font-style">First Name</label>
+                                    <input type="text" class="form-control input-color" placeholder="First name" required>
+                                </div>
+                                <div class="col">
+                                    <label for="lastNameInput" class="text-font-style">Last Name</label>
+                                    <input type="text" class="form-control input-color" placeholder="Last name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Number of participants</label>
+                                <select class="form-control" id="exampleFormControlSelect1" required>
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                                  
+                                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Comments</label>
+                                <textarea class="form-control input-color" id="exampleFormControlTextarea1" rows="3" required>Please include preferred date.</textarea>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--   Tour Overview   -->
+    <div class="container-fluid section-title">
+        <div class="row">
+            <h2>Tour Overview</h2>
+        </div>
+    </div>
+
+
+    <div class="container-fluid tour-overview">
+        <div class="row">
+            <div class="col-12 col-md-3 ">
+                <h4>What to Expect</h4>
+            </div>
+            <div class="col-12 col-md-9 ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales velit ac eleifend sagittis. Donec at est ipsum. Donec at tellus arcu. In molestie porttitor ante, in fermentum leo malesuada nec. Nullam non pellentesque velit. Nullam
+                    tincidunt lorem rutrum, ultrices velit a, vehicula ante. Sed sem arcu, egestas vitae ex condimentum, posuere egestas ipsum. Maecenas ut tincidunt magna.
+                </p>
+            </div>
+            <div class="col-12 col-md-3 ">
+                <h4>Tour Details</h4>
+            </div>
+            <div class="col-12 col-md-9 ">
+                <p> Tour duration: 3 hours. <br> Meeting point: Gorlitzer Banhof <br> Start time: 2:30pm. <br> Tours available every day.
+                </p>
+                <div class="tour-price badge badge-light ">
+                    Price: €35
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--   Footer   -->
+    <footer>
+        <div class="row">
+            <h6>Explore Berlin is an official agency registered In Berlin.</h6>
+        </div>
+    </footer>
+
+
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNslwlFKyLHFOe7YdneDKh6eLaYhWEPs0&callback=initMap "></script>
+<script src="assets/js/main.js"></script>
+
+
+
+</html>
