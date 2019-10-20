@@ -15,6 +15,15 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
+    <!-- EmailJS  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+    </script>
+    <script>
+        (function() {
+            emailjs.init("user_XD1KkzjVyP63bF0Jv8fiS");
+        })();
+    </script>
+
 
 </head>
 
@@ -145,7 +154,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <p>Your guide on this tour is Tevy. <br> She is a coffee aficionado and will show you all the hidden gems.</p>
+                <p>Tevy studied tourism. She has travelled the world and is enthusiastic about exploring through human connection.</p>
             </div>
 
             <div class="col-12 col-md-2">
@@ -168,47 +177,28 @@
                               </button>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <label for="firstNameInput" class="text-font-style">First Name</label>
-                                    <input type="text" class="form-control input-color" placeholder="First name" required>
-                                </div>
-                                <div class="col">
-                                    <label for="lastNameInput" class="text-font-style">Last Name</label>
-                                    <input type="text" class="form-control input-color" placeholder="Last name" required>
-                                </div>
+                        <form onsubmit="return sendMail(this);" method="POST">
+
+                            <div class="form-group ">
+                                <label for="exampleFormControlInput1" class="text-font-style">Name</label>
+                                <input type="text" name="name" class="form-control input-color" placeholder="Name" required>
+                            </div>
+
+                            <div class="form-group ">
+                                <label for="exampleFormControlInput1" class="text-font-style">Email address</label>
+                                <input type="email" name="emailaddress" class="form-control input-color" id="exampleFormControlInput1" placeholder="name@example.com" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <label for="exampleFormControlTextarea1" class="text-font-style">Booking Request</label>
+                                <textarea name="tourrequest" class="form-control input-color" id="exampleFormControlTextarea1" rows="3" required>Please specify the date you'd like, as well as special requests.</textarea>
                             </div>
 
-
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Number of participants</label>
-                                <select class="form-control" id="exampleFormControlSelect1" required>
-                                                  <option>1</option>
-                                                  <option>2</option>
-                                                  <option>3</option>
-                                                  <option>4</option>
-                                                  
-                                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Comments</label>
-                                <textarea class="form-control input-color" id="exampleFormControlTextarea1" rows="3" required>Please include preferred date.</textarea>
-                            </div>
-
+                            <button type="submit" class="btn btn-secondary header-font-style btn-contact">Submit</button>
+                        </form>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Book</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -269,7 +259,7 @@
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNslwlFKyLHFOe7YdneDKh6eLaYhWEPs0&callback=initMap "></script>
 <script src="assets/js/main.js"></script>
-
+<script src="assets/js/sendEmail.js"></script>
 
 
 </html>
