@@ -12,7 +12,7 @@ function createSearchBox(map) {
     const input = document.getElementById('pac-input');
     const searchBox = new google.maps.places.SearchBox(input);
 
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
     // Bias the SearchBox results towards current map's viewport.
     map.addListener('bounds_changed', function() {
@@ -31,7 +31,7 @@ function initAutocomplete() {
 
     });
 
-    const markers = [];
+    let markers = [];
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
     searchBox.addListener('places_changed', function() {
@@ -80,7 +80,7 @@ function initAutocomplete() {
             <h6>${marker.title}</h6>
             <p>${marker.address}</p>
             <p>${marker.types}</p>
-            <a href="contact.html" class="btn btn-primary">Book a Guide</a>
+            <a href="contact.html?location=${marker.title}" class="btn btn-primary">Book a Guide</a>
 
             `;
 
@@ -99,14 +99,14 @@ function initAutocomplete() {
             } else {
                 bounds.extend(place.geometry.location);
             }
-            /*
-                        //Welcome message
-                        function createWelcomeMessage() {
+            /*    //Welcome message
+                        
                             var guideWelcomeMessage = `"Visit " + ${marker.title}` + " with Tevy";
                             console.log(guideWelcomeMessage);
+                            document.addEventListener(ondo)
                             document.getElementById('welcomeMessage').innerHTML = guideWelcomeMessage;
-                        }
-                        */
+                        
+                       */
 
         });
 
