@@ -15,10 +15,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
+    <!-- EmailJS  -->
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
     </script>
 
-    <!-- EmailJS  -->
     <script type="text/javascript">
         (function() {
             emailjs.init("user_XD1KkzjVyP63bF0Jv8fiS");
@@ -72,7 +73,33 @@
     <div class="container-fluid " id="cover-photo">
     </div>
 
+    <!--   Tour Guide Message   -->
+    <div class="container-fluid">
+        <div class="row">
 
+            <h2 id="customized-guide-welcome-message"></h2>
+
+        </div>
+    </div>
+
+    <!--   Tour Guide Overview   -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="guide-image" id="tour-guide-photo">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <p id="tour-guide-overview"></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--   Contact Form   -->
 
     <div class="center-form">
         <form onsubmit="return sendMail(this);" method="POST">
@@ -116,7 +143,7 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/sendEmail.js"></script>
-
+    <script src="assets/js/tourGuides.js"></script>
 
 
 </body>
