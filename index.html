@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 
+
 </head>
 
 <body>
@@ -40,14 +41,14 @@
               </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#tour-options-overview">See All</a>
-                            <a class="dropdown-item" href="sightseeingtour.html">Sightseeing</a>
+
                             <a class="dropdown-item" href="barstour.html">Bar Crawl</a>
                             <a class="dropdown-item" href="cafetour.html">Best Cafes</a>
                             <a class="dropdown-item" href="streetarttour.html">Street Art</a>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
                 </ul>
@@ -56,9 +57,64 @@
         </nav>
     </div>
 
-    <!--   Cover Photo   -->
-    <div class="container-fluid " id="cover-photo">
+
+
+
+    <!--   Personalized Tours   -->
+    <div class="container-fluid section-title" id="personalized-tours">
+        <div class="row justify-content-center">
+            <h2>Hire a Personal Guide</h2>
+            <h6>Tell us where you want to go and we'll provide the guide.</h6>
+        </div>
     </div>
+
+    <div class="container-fluid search-bar-container">
+        <div class="row">
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="mainMap"></div>
+        </div>
+    </div>
+
+    <script>
+        var map;
+        var service;
+        var infowindow;
+
+        function initMap() {
+            var berlin = new google.maps.LatLng(52.5007423, 13.4300188);
+
+            infowindow = new google.maps.InfoWindow();
+
+            map = new google.maps.Map(
+                document.getElementById('map'), {
+                    center: sydney,
+                    zoom: 15
+                });
+
+            var request = {
+                query: 'Museum of Contemporary Art Australia',
+                fields: ['name', 'geometry'],
+            };
+
+            var service = new google.maps.places.PlacesService(map);
+
+            service.findPlaceFromQuery(request, function(results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        createMarker(results[i]);
+                    }
+                    map.setCenter(results[0].geometry.location);
+                }
+            });
+        }
+    </script>
+
 
     <!--   Tour Options   -->
 
@@ -69,29 +125,40 @@
     </div>
 
     <div class="container-fluid tour-options">
+        <div class="row">
 
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/olena-sergienko.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bar Crawl</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="barstour.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
 
-        <div class="tour-options-item">
-            <h2>Bar Crawl</h2>
-            <p>Visit some of Berlin's hidden and hipster bars.</p>
-            <button type="button">Learn More</button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/olena-sergienko.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cafe Tour</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="cafetour.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/olena-sergienko.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Street Art Tour</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="streetarttour.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+
         </div>
-        <div class="tour-options-item">
-            <h2>Best Cafes Tour</h2>
-            <p>Try some of Berlin's best coffee and cakes.</p>
-            <button type="button">Learn More</button>
-        </div>
-        <div class="tour-options-item">
-            <h2>Street Art Tour</h2>
-            <p>Explore the city through its street art.</p>
-            <button type="button">Learn More</button>
-        </div>
-
-
     </div>
 
     <!--   About Us   -->
-    <div class="container-fluid section-title" id="reviews">
+    <div class="container-fluid section-title" id="about">
         <div class="row justify-content-center">
             <h2>About</h2>
         </div>
@@ -177,21 +244,12 @@
 
     <!--   Footer   -->
     <footer>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByhw1jHqwI07V8rf5gvde5Kfhi-wwZHSU&libraries=places&callback=initAutocomplete" async defer></script>
 
-    <script src="assets/js/main.js"></script>
-
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNslwlFKyLHFOe7YdneDKh6eLaYhWEPs0&callback=initMap">
-    </script>
+    <script src="assets/js/mainT.js"></script>
 
 </body>
 
