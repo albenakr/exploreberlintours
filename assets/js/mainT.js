@@ -99,14 +99,7 @@ function initAutocomplete() {
             } else {
                 bounds.extend(place.geometry.location);
             }
-            /*    //Welcome message
-                        
-                            var guideWelcomeMessage = `"Visit " + ${marker.title}` + " with Tevy";
-                            console.log(guideWelcomeMessage);
-                            document.addEventListener(ondo)
-                            document.getElementById('welcomeMessage').innerHTML = guideWelcomeMessage;
-                        
-                       */
+
 
         });
 

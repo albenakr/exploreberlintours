@@ -37,8 +37,7 @@ function initMap() {
         }
     }
 
-
-
+    //Create Tour Path
     var TourPath = new google.maps.Polyline({
         path: TourPlanCoordinates,
         geodesic: true,

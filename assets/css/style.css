@@ -1,149 +1,177 @@
-                                    html,
-                                body {
-                                    height: 100%;
-                                    margin: 0;
-                                    padding: 0;
-                                }
-                                
-                                h2 {
-                                    text-align: center;
-                                }
-                                
-                                #personalized-tours {
-                                    margin-top: 50px;
-                                }
-                                
-                                #mainMap {
-                                    width: 100%;
-                                    height: 400px;
-                                }
-                                /* MainMap - Places API suggested styling*/
-                                
-                                #description {
-                                    font-family: Roboto;
-                                    font-size: 15px;
-                                    font-weight: 300;
-                                }
-                                
-                                .pac-card {
-                                    margin: 10px 10px 0 0;
-                                    border-radius: 2px 0 0 2px;
-                                    box-sizing: border-box;
-                                    -moz-box-sizing: border-box;
-                                    outline: none;
-                                    box-shadow: 0 2px 6px rgba(209, 40, 40, 0.3);
-                                    background-color: #fff;
-                                    font-family: Roboto;
-                                }
-                                
-                                #pac-container {
-                                    padding-bottom: 12px;
-                                    margin-right: 12px;
-                                }
-                                
-                                .pac-controls {
-                                    display: inline-block;
-                                    padding: 5px 11px;
-                                }
-                                
-                                .pac-controls label {
-                                    font-family: Roboto;
-                                    font-size: 13px;
-                                    font-weight: 300;
-                                }
-                                
-                                #pac-input {
-                                    background-color: #fff;
-                                    font-family: Roboto;
-                                    font-size: 15px;
-                                    font-weight: 300;
-                                    margin-left: 12px;
-                                    padding: 0 11px 0 13px;
-                                    text-overflow: ellipsis;
-                                    width: 400px;
-                                }
-                                
-                                #pac-input:focus {
-                                    border-color: #4d90fe;
-                                }
-                                
-                                #title {
-                                    color: #fff;
-                                    background-color: #4d90fe;
-                                    font-size: 25px;
-                                    font-weight: 500;
-                                    padding: 6px 12px;
-                                }
-                                
-                                #target {
-                                    width: 345px;
-                                }
-                                /* Index Page */
-                                /* Cover photo - Contact Page */
-                                
-                                #cover-photo {
-                                    background: url('../images/pablo-hermoso.jpg');
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    height: 500px;
-                                    margin-top: 50px;
-                                }
-                                /* Tour Options - Index Page */
-                                
-                                .card {
-                                    margin: 10px;
-                                }
-                                
-                                .tour-title {
-                                    padding-top: 50px;
-                                }
-                                /* Individual Tour Pages */
-                                /* Map */
-                                
-                                .map-container {
-                                    display: flex;
-                                    flex-direction: row;
-                                    justify-content: center;
-                                }
-                                
-                                #map {
-                                    height: 350px;
-                                    width: 550px;
-                                }
-                                
-                                #map2 {
-                                    height: 350px;
-                                    width: 550px;
-                                }
-                                /* Guide */
-                                
-                                .guide-image {
-                                    width: 198px;
-                                    height: 198px;
-                                    overflow: hidden;
-                                    border-radius: 50%;
-                                }
-                                
-                                .guide-overview div {
-                                    margin: 3px;
-                                }
-                                
-                                .modal-container {
-                                    justify-content: center;
-                                }
-                                /* Footer */
-                                
-                                footer {
-                                    height: 50px;
-                                    width: 100%;
-                                    background-color: antiquewhite;
-                                    bottom: 0px;
-                                }
-                                
-                                .carousel {
-                                    margin: 15px;
-                                }
-                                
-                                .carousel-item {
-                                    background-color: blanchedalmond;
+                html,
+                body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                h2 {
+                    text-align: center;
+                    justify-content: center;
+                    margin: 40px;
+                }
+                /* Navbar */
+                /* Index Page */
+                /*  Index page - personalized tours section*/
+                
+                #personalized-tours-title {
+                    margin-top: 85px;
+                    margin-bottom: 40px;
+                    justify-content: center;
+                }
+                
+                #search-bar-container {
+                    margin: 50px;
+                }
+                
+                #mainMap {
+                    width: 100%;
+                    height: 400px;
+                }
+                /* MainMap - Places API suggested styling*/
+                
+                #description {
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+                
+                .pac-card {
+                    margin: 10px 10px 0 0;
+                    border-radius: 2px 0 0 2px;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    outline: none;
+                    box-shadow: 0 2px 6px rgba(209, 40, 40, 0.3);
+                    background-color: #fff;
+                    font-family: Roboto;
+                }
+                
+                #pac-container {
+                    padding-bottom: 12px;
+                    margin-right: 12px;
+                }
+                
+                .pac-controls {
+                    display: inline-block;
+                    padding: 5px 11px;
+                }
+                
+                .pac-controls label {
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+                
+                #pac-input {
+                    background-color: #fff;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-left: 12px;
+                    padding: 0 11px 0 13px;
+                    text-overflow: ellipsis;
+                    width: 400px;
+                }
+                
+                #pac-input:focus {
+                    border-color: #4d90fe;
+                }
+                
+                #title {
+                    color: #fff;
+                    background-color: #4d90fe;
+                    font-size: 25px;
+                    font-weight: 500;
+                    padding: 6px 12px;
+                }
+                
+                #target {
+                    width: 345px;
+                }
+                
+                .gm-style-iw-d {
+                    padding: 10px;
+                }
+                /*  Index Page - Tour Options */
+                
+                .card {
+                    margin: 30px;
+                }
+                
+                #tour-options-title {
+                    padding-top: 70px;
+                }
+                
+                #tour-options {
+                    justify-content: center;
+                }
+                /* About */
+                
+                #about {
+                    justify-content: center;
+                    text-align: center;
+                    margin: 0;
+                }
+                /* Index page - Reviews Section */
+                
+                .carousel {
+                    margin: 15px;
+                }
+                
+                .carousel-item {
+                    background-color: rgba(253, 247, 237, 0.966);
+                }
+                /* Individual Tour Pages - Map*/
+                
+                .tour-title {
+                    margin-top: 75px;
+                }
+                
+                .tour-title div {
+                    justify-content: center;
+                }
+                
+                #map {
+                    height: 350px;
+                    width: 100%;
+                }
+                
+                #map2 {
+                    height: 350px;
+                    width: 550px;
+                }
+                /* Individual Tour Pages - Guide*/
+                
+                .guide-image {
+                    width: 198px;
+                    height: 198px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
+                
+                .guide-overview div {
+                    margin: 3px;
+                }
+                /* Individual Tour Pages - Tour Overview*/
+                
+                .tour-overview {
+                    padding: 15px;
+                }
+                /* Footer */
+                
+                footer {
+                    height: 50px;
+                    width: 100%;
+                    background-color: rgb(207, 157, 91);
+                    bottom: 0px;
+                }
+                
+                #cover-photo {
+                    background: url('../images/pablo-hermoso.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 500px;
+                    margin-top: 50px;
+                }
