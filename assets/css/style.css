@@ -1,177 +1,374 @@
-                html,
-                body {
-                    height: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
-                
-                h2 {
-                    text-align: center;
-                    justify-content: center;
-                    margin: 40px;
-                }
-                /* Navbar */
-                /* Index Page */
-                /*  Index page - personalized tours section*/
-                
-                #personalized-tours-title {
-                    margin-top: 85px;
-                    margin-bottom: 40px;
-                    justify-content: center;
-                }
-                
-                #search-bar-container {
-                    margin: 50px;
-                }
-                
-                #mainMap {
-                    width: 100%;
-                    height: 400px;
-                }
-                /* MainMap - Places API suggested styling*/
-                
-                #description {
-                    font-family: sans-serif;
-                    font-size: 15px;
-                    font-weight: 300;
-                }
-                
-                .pac-card {
-                    margin: 10px 10px 0 0;
-                    border-radius: 2px 0 0 2px;
-                    box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    outline: none;
-                    box-shadow: 0 2px 6px rgba(209, 40, 40, 0.3);
-                    background-color: #fff;
-                    font-family: Roboto;
-                }
-                
-                #pac-container {
-                    padding-bottom: 12px;
-                    margin-right: 12px;
-                }
-                
-                .pac-controls {
-                    display: inline-block;
-                    padding: 5px 11px;
-                }
-                
-                .pac-controls label {
-                    font-family: Roboto;
-                    font-size: 13px;
-                    font-weight: 300;
-                }
-                
-                #pac-input {
-                    background-color: #fff;
-                    font-family: Roboto;
-                    font-size: 15px;
-                    font-weight: 300;
-                    margin-left: 12px;
-                    padding: 0 11px 0 13px;
-                    text-overflow: ellipsis;
-                    width: 400px;
-                }
-                
-                #pac-input:focus {
-                    border-color: #4d90fe;
-                }
-                
-                #title {
-                    color: #fff;
-                    background-color: #4d90fe;
-                    font-size: 25px;
-                    font-weight: 500;
-                    padding: 6px 12px;
-                }
-                
-                #target {
-                    width: 345px;
-                }
-                
-                .gm-style-iw-d {
-                    padding: 10px;
-                }
-                /*  Index Page - Tour Options */
-                
-                .card {
-                    margin: 30px;
-                }
-                
-                #tour-options-title {
-                    padding-top: 70px;
-                }
-                
-                #tour-options {
-                    justify-content: center;
-                }
-                /* About */
-                
-                #about {
-                    justify-content: center;
-                    text-align: center;
-                    margin: 0;
-                }
-                /* Index page - Reviews Section */
-                
-                .carousel {
-                    margin: 15px;
-                }
-                
-                .carousel-item {
-                    background-color: rgba(253, 247, 237, 0.966);
-                }
-                /* Individual Tour Pages - Map*/
-                
-                .tour-title {
-                    margin-top: 75px;
-                }
-                
-                .tour-title div {
-                    justify-content: center;
-                }
-                
-                #map {
-                    height: 350px;
-                    width: 100%;
-                }
-                
-                #map2 {
-                    height: 350px;
-                    width: 550px;
-                }
-                /* Individual Tour Pages - Guide*/
-                
-                .guide-image {
-                    width: 198px;
-                    height: 198px;
-                    overflow: hidden;
-                    border-radius: 50%;
-                }
-                
-                .guide-overview div {
-                    margin: 3px;
-                }
-                /* Individual Tour Pages - Tour Overview*/
-                
-                .tour-overview {
-                    padding: 15px;
-                }
-                /* Footer */
-                
-                footer {
-                    height: 50px;
-                    width: 100%;
-                    background-color: rgb(207, 157, 91);
-                    bottom: 0px;
-                }
-                
-                #cover-photo {
-                    background: url('../images/pablo-hermoso.jpg');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    height: 500px;
-                    margin-top: 50px;
-                }
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather:100,200,300,400,500,600,700&display=swap');
+        /* Colors */
+        
+        .beige-background-color {
+            background-color: #f9d5bb;
+        }
+        
+        .beige-text-color {
+            color: #f9d5bb;
+        }
+        
+        .coral-color-light {
+            background-color: #f66767;
+        }
+        
+        .coral-color-dark {
+            background-color: #d35656;
+        }
+        /* Fonts and Text Styling*/
+        
+        .section-title-font {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            color: #3c3d47;
+        }
+        
+        .card-title {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 600;
+            color: #3c3d47;
+        }
+        
+        .text-font-style {
+            font-family: 'Merriweather', serif;
+            font-weight: 400;
+            color: #3c3d47;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            text-align: center;
+            justify-content: center;
+            margin: 40px;
+        }
+        
+        a {
+            color: #3c3d47;
+        }
+        /* Navbar */
+        
+        .navbar-container {
+            width: 100vw;
+            max-height: 80px;
+            font-family: 'Merriweather', serif;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        
+        .navbar-brand {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            color: #3c3d47;
+            font-size: 25px;
+        }
+        
+        .nav-link:hover {
+            background-color: #f9d5bb;
+        }
+        
+        .dropdown-menu {
+            background-color: #f66767;
+            color: #3c3d47;
+        }
+        
+        .dropdown-menu:hover {
+            border-color: #f9d5bb;
+        }
+        
+        .dropdown-item:hover {
+            color: #f9d5bb;
+            background-color: #d35656;
+        }
+        /* Footer */
+        
+        footer {
+            height: 75px;
+            width: 100%;
+            background-color: #f66767;
+            bottom: 0px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 18px;
+        }
+        
+        footer p {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            color: #3c3d47;
+            opacity: 0.8;
+        }
+        /* Index Page */
+        /*  Index page - personalized tours section*/
+        
+        #personalized-tours-title {
+            margin-top: 85px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        #search-bar-container {
+            margin: 50px;
+        }
+        
+        #mainMap {
+            width: 100%;
+            height: 400px;
+        }
+        /* MainMap */
+        
+        #description {
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        
+        .pac-card {
+            margin: 10px 10px 0 0;
+            border-radius: 2px 0 0 2px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            box-shadow: 0 2px 6px #3c3d47;
+            background-color: #fff;
+            font-family: 'Merriweather', serif;
+        }
+        
+        #pac-container {
+            padding-bottom: 12px;
+            margin-right: 12px;
+        }
+        
+        .pac-controls {
+            display: inline-block;
+            padding: 5px 11px;
+        }
+        
+        .pac-controls label {
+            font-family: 'Merriweather', serif;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        
+        #pac-input {
+            background-color: #fff;
+            font-family: 'Roboto Slab', serif;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 400px;
+        }
+        
+        #pac-input:focus {
+            border-color: #3c3d47;
+        }
+        
+        #title {
+            color: #fff;
+            background-color: #3c3d47;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 6px 12px;
+        }
+        
+        #target {
+            width: 345px;
+        }
+        
+        .gm-style-iw-d {
+            padding: 10px;
+            font-family: 'Roboto Slab', serif;
+        }
+        /*  Index Page - Tour Options */
+        
+        .card {
+            margin: 30px;
+        }
+        
+        #tour-options-title {
+            padding-top: 70px;
+        }
+        
+        #tour-options {
+            justify-content: center;
+        }
+        /* Index Page - About */
+        
+        #about {
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+        }
+        /* Index page - Reviews Section */
+        
+        .carousel-item {
+            background-color: rgba(253, 247, 237, 0.966);
+            padding: 25px 20px 15px 20px;
+            height: 270px;
+            margin-bottom: 15px;
+        }
+        
+        .carousel-indicators li {
+            box-sizing: content-box;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 30px;
+            height: 3px;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #f66767;
+            background-clip: padding-box;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            opacity: .5;
+            transition: opacity .6s ease;
+        }
+        /* Individual Tour Pages - Map*/
+        
+        .tour-title {
+            margin-top: 110px;
+            margin-bottom: 30px;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            color: #3c3d47;
+        }
+        
+        .tour-title div {
+            justify-content: center;
+        }
+        
+        #map {
+            height: 350px;
+            width: 100%;
+        }
+        
+        #map2 {
+            height: 350px;
+            width: 550px;
+        }
+        
+        .badge {
+            justify-content: center;
+            text-align: center;
+            padding-top: 35px;
+            max-width: 80px;
+            background-color: #f9d5bb;
+            height: 80px;
+            font-size: 15px;
+        }
+        /* Individual Tour Pages - Guide*/
+        
+        .section-title {
+            justify-content: center;
+        }
+        
+        .guide-image {
+            width: 198px;
+            height: 198px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        
+        .guide-overview div {
+            margin: 3px;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+        
+        .guide-description {
+            align-self: center;
+        }
+        
+        .book-tour-btn {
+            align-self: center;
+        }
+        /* Individual Tour Pages - Tour Overview*/
+        
+        .tour-overview {
+            padding: 15px;
+        }
+        
+        .tour-description {
+            margin-bottom: 35px;
+        }
+        
+        .form-group label {
+            float: left;
+        }
+        /* Contact Page */
+        
+        #cover-photo {
+            background: url('../images/pablo-hermoso.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+        }
+        
+        .welcome-message {
+            justify-content: center;
+        }
+        
+        .tour-guide-contact-page {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .guide-description-contact-page {
+            align-self: center;
+        }
+        
+        .contact-form-container {
+            margin: 85px 0;
+        }
+        
+        .btn-contact {
+            float: right;
+        }
+        /* Buttons */
+        
+        .btn {
+            padding: 0.35em 1.2em;
+            border: 0.3em solid #3c3d47;
+            background-color: #f66767;
+            margin: 0 0.3em 0.3em 0;
+            border-radius: 0.12em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Merriweather', serif;
+            font-weight: 300;
+            color: #3c3d47;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        
+        .btn:hover {
+            color: #3c3d47;
+            background-color: #f9d5bb;
+        }
+        /* Media Queries */
+        
+        @media (min-width: 768px) {
+            .carousel-item {
+                height: 230px;
+                padding-top: 55px;
+            }
+        }
+        
+        @media (min-width: 411px) and (max-width: 767px) {
+            .carousel-item {
+                height: 230px;
+                padding-top: 40px;
+            }
+        }

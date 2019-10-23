@@ -34,34 +34,38 @@
 
 <body>
     <!--   Navbar   -->
-
     <div class="container-fluid navbar-container">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light coral-color-light  fixed-top">
+
+
             <a class="navbar-brand" href="index.html">Explore Berlin Tours</a>
+
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="index.html">Home </a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tours
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
+                    Tours
+                  </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
 
                             <a class="dropdown-item" href="barstour.html">Bar Crawl</a>
                             <a class="dropdown-item" href="cafetour.html">Best Cafes</a>
                             <a class="dropdown-item" href="streetarttour.html">Street Art</a>
                         </div>
                     </li>
+
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
                 </ul>
@@ -71,13 +75,14 @@
     </div>
 
 
+
     <!--   Cover Photo   -->
     <div class="container-fluid " id="cover-photo">
     </div>
 
     <!--   Tour Guide Message   -->
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid section-title-font">
+        <div class="row welcome-message">
 
             <h2 id="customized-guide-welcome-message"></h2>
 
@@ -85,14 +90,14 @@
     </div>
 
     <!--   Tour Guide Overview   -->
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4 tour-guide-contact-page">
                 <div class="guide-image" id="tour-guide-photo">
                 </div>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-8 guide-description-contact-page">
                 <p id="tour-guide-overview"></p>
             </div>
 
@@ -103,11 +108,11 @@
 
     <!--   Contact Form   -->
 
-    <div class="center-form">
+    <div class="container-fluid contact-form-container">
         <form onsubmit="return sendMail(this);" method="POST">
 
             <div class="form-group ">
-                <label for="exampleFormControlInput1" class="text-font-style">Name</label>
+                <label for="exampleFormControlInput1" class="text-font-style ">Name</label>
                 <input type="text" name="name" class="form-control input-color" placeholder="Name" required>
             </div>
 
@@ -121,7 +126,7 @@
                 <textarea name="tourrequest" class="form-control input-color" id="exampleFormControlTextarea1" rows="3" required>Please specify the tour you'd like to book, as well as the date.</textarea>
             </div>
 
-            <button type="submit" class="btn btn-secondary header-font-style btn-contact">Submit</button>
+            <button type="submit" class="btn  header-font-style btn-contact" id="contact-button">Submit</button>
         </form>
     </div>
 
@@ -150,4 +155,4 @@
 
 </body>
 
-</html>
+</html

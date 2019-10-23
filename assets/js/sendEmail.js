@@ -7,12 +7,14 @@ function sendMail(contactForm) {
         .then(
             function(response) {
                 console.log("SUCCESS", response);
-
+                document.querySelector('.btn-contact').innerHTML = "Thanks for reaching out!";
             },
             function(error) {
                 console.log("FAILED", error);
+                document.querySelector('.btn-contact').innerHTML = "Error, please try again.";
             });
     return false;
 }
 
-console.log("hey")
+
+//
