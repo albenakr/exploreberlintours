@@ -113,8 +113,12 @@
             justify-content: center;
         }
         
-        #search-bar-container {
-            margin: 50px;
+        .search-message,
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
         }
         
         #mainMap {
