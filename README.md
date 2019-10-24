@@ -20,16 +20,16 @@ User Stories:
 - As a user, I want to see more information about the agency I'm booking with, so that I can make an informed decision.
 - As a user, I want to be able to see detailed information about each tour option, so that I can decide whether to book.
 - As a user, I want to be able to contact the agency, in order to book a tour.
-- As a user, I want to see information about the guide I will be booking a tour with, so that I can make an informed decision.
+- As a user, I want to see information about the guide I will be booking a tour with.
 
-Wireframes used in the design process are added in a folder 'wireframes' withing this project.
+Wireframes used in the design process are added in a folder 'wireframes' within this project.
 
 ## Features
 
 The main sections of the website are the Home page, containing the 'Hire a Personalized Guide section', the alternative tour options, as well as an About section and a Reviews section. Each tour option listed on the Home page has its own individual page with an overview and possibiltiy to book. The last page is the 'Contact Us' section, allowing users to reach out and book a tour. 
  
 ### Existing Features
-- Hire a personal guide - allows users to book a guide to visit a specific location of their choice. They can do that by seaching for the location they have in mind in the searchbar on the home page (index.html). The searchbar uses Google Places API Autocomplete function for a more seemless search experience. Once they have filled in the place they want to visit and clicked 'Enter' an infoWindow comes up. It's a custom infoWindow, which displays the title or name of the location, as well as it's address all of this information is collected directly through the Places API. Additionally, the infoWindow contains a 'Book a Tour' option. Once a user clicks on it, they are redirected to the Contact page (contact.html). The Javascript code linking to the Google Places API is contained within the mainMap.js file.
+- Hire a personal guide - allows users to book a guide to visit a specific location of their choice. They can do that by seaching for the location they have in mind in the searchbar on the home page (index.html). The searchbar uses Google Places API Autocomplete function for a more seemless search experience. Once they have filled in the place they want to visit and clicked 'Enter' an infoWindow comes up. It's a custom infoWindow, which displays the title or name of the location, as well as it's address all of this information is collected directly through the Places API. Additionally, the infoWindow contains a 'Book a Tour' button. Once a user clicks on it, they are redirected to the Contact page (contact.html). The Javascript code linking to the Google Places API is contained within the mainMap.js file.
 
  - Contact page to book a tour(contact.html). The contact page can be accesses from the Navbar, or by the user being redirected from the 'Book a Tour' button on the customized InfoWindow in the 'Hire a personal guide' section. On the contact page they can see the guide, who is available to take them on a tour and they have a contact form to fill in in order to reach out to the agency and book a tour. There are 6 different guide options and they are shown in a randomized order (tourGuides.js). The contact form is linked to EmailJS and fully functioning - each time someone fills in the contact form, an email is received to the corresponding email address (sendEmail.js).
 
@@ -98,8 +98,11 @@ Responsiveness testing was done through the Dev Tools and the screen sizes avail
 
 ## Deployment
 
-The project was developed and locally ran through VS Code and Chrome. In order to make the code publically accessible for review it was published on Github and deployed through Github Pages.
+The project was developed and locally ran through VS Code and Chrome. 
 
+In order to make the code publically accessible for review it was published on Github. 
+
+The deployed website is published on Github Pages and can be seen here: https://albenakr.github.io/exploreberlintours/
 
 
 ## Credits

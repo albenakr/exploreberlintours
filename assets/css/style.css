@@ -86,24 +86,6 @@
             color: #f9d5bb;
             background-color: #d35656;
         }
-        /* Footer */
-        
-        footer {
-            height: 75px;
-            width: 100%;
-            background-color: #f66767;
-            bottom: 0px;
-            text-align: center;
-            justify-content: center;
-            padding-top: 18px;
-        }
-        
-        footer p {
-            font-family: 'Roboto Slab', serif;
-            font-weight: 400;
-            color: #3c3d47;
-            opacity: 0.8;
-        }
         /* Index Page */
         /*  Index page - personalized tours section*/
         
@@ -283,18 +265,16 @@
             border-radius: 50%;
         }
         
-        .guide-overview div {
+        .guide-overview-image-div,
+        .guide-description,
+        .button-tour-page {
             margin: 3px;
             justify-content: center;
             text-align: center;
             display: flex;
         }
         
-        .guide-description {
-            align-self: center;
-        }
-        
-        .book-tour-btn {
+        .guide-description p {
             align-self: center;
         }
         /* Individual Tour Pages - Tour Overview*/
@@ -339,6 +319,24 @@
         
         .btn-contact {
             float: right;
+        }
+        /* Footer */
+        
+        footer {
+            height: 75px;
+            width: 100%;
+            background-color: #f66767;
+            bottom: 0px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 18px;
+        }
+        
+        footer p {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            color: #3c3d47;
+            opacity: 0.8;
         }
         /* Buttons */
         
